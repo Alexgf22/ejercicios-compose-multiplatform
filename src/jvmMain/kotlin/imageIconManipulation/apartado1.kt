@@ -33,7 +33,7 @@ fun main() = singleWindowApplication {
     val density = LocalDensity.current
     Column {
         AsyncImage(
-            load = { loadImageBitmap(File("imageIconManipulation/sample.png")) },
+            load = { loadImageBitmap(File("src/jvmMain/resources/sample.png")) },
             painterFor = { remember { BitmapPainter(it) } },
             contentDescription = "Sample",
             modifier = Modifier.width(200.dp)
@@ -46,7 +46,7 @@ fun main() = singleWindowApplication {
             modifier = Modifier.width(200.dp)
         )
         AsyncImage(
-            load = { loadXmlImageVector(File("imageIconManipulation/compose-logo.xml"), density) },
+            load = { loadXmlImageVector(File("src/jvmMain/resources/compose-logo.xml"), density) },
             painterFor = { rememberVectorPainter(it) },
             contentDescription = "Compose logo",
             contentScale = ContentScale.FillWidth,
