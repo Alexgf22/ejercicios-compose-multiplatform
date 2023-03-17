@@ -19,6 +19,20 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 
+/*
+    pedidos personalizados:
+
+    Para mover el foco en un orden personalizado, debemos crear FocusRequester y
+    aplicar el Modifier.focusOrder modificador a cada componente por el que desee navegar.
+
+    - FocusRequester envía solicitudes para cambiar el enfoque.
+    - Modifier.focusOrder se utiliza para especificar un orden transversal de enfoque
+      personalizado.
+    En el siguiente ejemplo, simplemente creamos una 'FocusRequester' lista y creamos
+    campos de texto para cada 'FocusRequester' en la lista. Cada campo de texto envía
+    una solicitud de enfoque al campo de texto anterior y siguiente en la lista cuando
+    se usa el atajo de teclado shift + tab o tab en orden inverso.
+ */
 fun main() = application {
     Window(
         state = WindowState(size = DpSize(350.dp, 500.dp)),

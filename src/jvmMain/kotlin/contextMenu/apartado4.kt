@@ -19,6 +19,13 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.window.singleWindowApplication
 
+
+/*
+    Menú contextual de estilo:
+
+    El estilo del menú contextual no cumple con MaterialTheme.
+    Para cambiar sus colores, debe anular LocalContextMenuRepresentation:
+ */
 fun main() = singleWindowApplication {
     isSystemInDarkTheme()
     MaterialTheme(

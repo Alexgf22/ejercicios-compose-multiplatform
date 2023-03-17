@@ -8,6 +8,9 @@ import java.awt.dnd.DropTarget
 import java.awt.dnd.DropTargetAdapter
 import java.awt.dnd.DropTargetDropEvent
 
+/*
+    También puedes acceder a ComposeWindow en el Window ámbito Composable:
+ */
 fun main() = singleWindowApplication {
     LaunchedEffect(Unit) {
         window.dropTarget = DropTarget().apply {

@@ -15,6 +15,16 @@ import androidx.compose.ui.window.application
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
 
+/*
+    Ventanas transparentes (por ejemplo, permite hacer ventanas de
+    forma personalizada)
+
+    Para crear una ventana transparente basta con pasar dos parámetros
+    a la función Ventana: transparent=true y undecorate=true(no es posible
+    decorar una Ventana transparente). El escenario común es combinar una
+    ventana transparente con una superficie de una forma personalizada. A
+    continuación se muestra un ejemplo de una ventana con esquinas redondeadas.
+ */
 fun main() = application {
     var isOpen by remember { mutableStateOf(true) }
     if (isOpen) {

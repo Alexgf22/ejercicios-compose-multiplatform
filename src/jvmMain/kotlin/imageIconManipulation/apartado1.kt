@@ -29,6 +29,7 @@ import java.io.IOException
 import java.net.URL
 
 
+// Carga de imágenes desde el almacenamiento del dispositivo o la red de forma asíncrona
 fun main() = singleWindowApplication {
     val density = LocalDensity.current
     Column {

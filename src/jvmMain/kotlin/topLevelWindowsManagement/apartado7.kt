@@ -11,6 +11,14 @@ import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 
+/*
+    Escuchando el estado de la ventana:
+
+    Leer el estado en la composición es útil cuando necesita actualizar
+    la interfaz de usuario, pero hay casos en los que necesita reaccionar a
+    los cambios de estado y enviar un valor a otro nivel no componible de su
+    aplicación (escribirlo en la base de datos, por ejemplo) :
+ */
 fun main() = application {
     val state = rememberWindowState()
 

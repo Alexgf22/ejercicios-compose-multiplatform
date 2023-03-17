@@ -23,6 +23,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+/*
+    Hacer que el componente se centre:
+
+    Para enfocar un componente, necesitamos crear 'FocusRequester' y
+    aplicar el modificador 'Modifier.focusRequester' al componente en el
+    que desea enfocar. Con 'FocusRequester', podemos solicitar foco, como
+    en el siguiente ejemplo:
+ */
 fun main() = application {
     Window(
         state = WindowState(size = WindowSize(350.dp, 450.dp)),

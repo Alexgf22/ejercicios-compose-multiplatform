@@ -1,6 +1,7 @@
+/*
 package navigation
 
-/*
+
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -10,6 +11,12 @@ import com.arkivanov.decompose.pop
 import com.arkivanov.decompose.push
 import java.lang.module.Configuration
 
+
+
+*/
+/*
+    Usando el Router:
+ *//*
 
 @Composable
 fun ItemList(
@@ -65,4 +72,5 @@ fun Root(database: Database) {
                 )
         }.let {} // Ensure exhaustiveness
     }
-}*/
+}
+*/

@@ -13,6 +13,11 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.WindowScope
 import androidx.compose.ui.window.application
 
+/*
+    Tenga en cuenta que WindowDraggableArea solo se puede usar dentro
+    de singleWindowApplication, Window y Dialog. Si necesita usarlo en
+    otra función Composable, pase WindowScope como receptor allí:
+ */
 fun main() = application {
     Window(onCloseRequest = ::exitApplication, undecorated = true) {
         AppWindowTitleBar()

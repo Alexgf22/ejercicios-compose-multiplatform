@@ -16,6 +16,11 @@ import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.onPointerEvent
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Oyentes de movimiento de ratón:
+    Vamos a crear una ventana e instalar un detector de movimiento de puntero en ella que
+    cambia el color de fondo según la posición del puntero del ratón
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication {
     var color by remember { mutableStateOf(Color(0, 0, 0)) }

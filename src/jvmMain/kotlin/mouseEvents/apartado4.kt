@@ -15,6 +15,7 @@ import androidx.compose.ui.input.pointer.onPointerEvent
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.singleWindowApplication
 
+// Oyentes de desplazamiento del mouse
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication {
     var number by remember { mutableStateOf(0f) }

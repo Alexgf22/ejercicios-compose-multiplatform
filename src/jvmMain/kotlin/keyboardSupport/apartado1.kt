@@ -21,6 +21,25 @@ import androidx.compose.ui.input.key.KeyEventType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Eventos relacionados con el enfoque:
+
+    Funciona igual que Compose para Android; para obtener más información,
+    consulte Referencia de la API
+
+    El caso de uso más común es definir controladores de teclado para controles
+    activos como TextField. Puede usar ambos 'onKeyEvent' y, 'onPreviewKeyEvent' pero el
+    último suele ser preferible para definir accesos directos, ya que le garantiza que
+    los eventos clave no serán consumidos por los componentes secundarios. Aquí hay un
+    ejemplo
+
+
+    Tenga en cuenta la anotación @OptIn(ExperimentalComposeUiApi::class).
+    Algunas API relacionadas con claves siguen siendo una característica experimental
+    de Compose, y es posible que se realicen cambios posteriores en la API. Por lo tanto,
+    requiere el uso de una anotación especial para enfatizar la naturaleza experimental
+    del código.
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication {
     MaterialTheme {

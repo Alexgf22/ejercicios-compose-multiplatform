@@ -25,6 +25,20 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.WindowState
 import androidx.compose.ui.window.singleWindowApplication
 
+
+/*
+    Barras de desplazamiento:
+
+    Puede aplicar barras de desplazamiento a los componentes desplazables.
+    La barra de desplazamiento y los componentes desplazables comparten un estado común
+    para sincronizarse entre sí. Por ejemplo, 'VerticalScrollbar' se puede adjuntar a
+    'Modifier.verticalScroll', y 'LazyColumn' y 'HorizontalScrollbar' se puede adjuntar a
+    'Modifier.horizontalScroll' y 'LazyRow'.
+
+    Las barras de desplazamiento se pueden mover arrastrándolas y usando la rueda del mouse
+    o el panel táctil. El desplazamiento horizontal con la rueda del mouse se puede realizar
+    haciendo clic lateralmente en la rueda o manteniendo presionada Shift.
+ */
 fun main() = singleWindowApplication(
     title = "Scrollbars",
     state = WindowState(width = 250.dp, height = 400.dp)

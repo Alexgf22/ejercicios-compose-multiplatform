@@ -25,6 +25,27 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Nuevos controladores onClick experimentales (solo para la plataforma Desktop-JVM)
+
+    'Modifier.onClick' proporciona devoluciones de llamada independientes para clics,
+    clics dobles, clics largos. Maneja los clics originados solo a partir de eventos de
+    puntero y click el evento de accesibilidad no se maneja de forma automática.
+
+    Cada 'onClick' se puede configurar para apuntar a eventos de puntero específicos
+    (usando matcher: PointerMatcher y keyboardModifiers: PointerKeyboardModifiers.() -> Boolean).
+    matcherse puede especificar para elegir qué botón del mouse debe activar un clic.
+    keyboardModifiers permite filtrar eventos de puntero que han presionado modificadores de
+    teclado especificados.
+
+    'onClick' Se pueden encadenar múltiples modificadores para manejar diferentes clics con
+    diferentes condiciones (modificadores de combinación y teclado).
+    A diferencia de clickable, 'onClick' no tiene un 'Modifier.indication', 'Modifier.semantics' y
+    no activa un evento de clic cuando 'Enter' se presiona. Estos modificadores deben agregarse
+    por separado si es necesario.
+    Los controladores más genéricos (con la menor cantidad de condiciones) 'onClick' deben
+    declararse antes que otros para garantizar la correcta propagación de eventos.
+ */
 @OptIn(ExperimentalFoundationApi::class, ExperimentalAnimationApi::class)
 fun main() = singleWindowApplication {
     Column {

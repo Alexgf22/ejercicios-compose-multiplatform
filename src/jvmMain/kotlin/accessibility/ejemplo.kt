@@ -10,6 +10,12 @@ import androidx.compose.ui.semantics.*
 import androidx.compose.ui.unit.*
 import androidx.compose.ui.window.*
 
+
+/*
+    soporte de accesibilidad
+
+    Widget personalizado con reglas semánticas
+ */
 fun main() = singleWindowApplication(
     title = "Custom Button", state = WindowState(size = DpSize(300.dp, 200.dp))
 ) {

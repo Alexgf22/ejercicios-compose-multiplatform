@@ -18,6 +18,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.singleWindowApplication
 
+/* Oyentes de eventos de ratón: Oyentes de clics
+   'combinedClickable' solo admite el botón principal (botón izquierdo del mouse) y
+   los eventos táctiles.
+ */
 fun main() = singleWindowApplication {
     var count by remember { mutableStateOf(0) }
     Box(contentAlignment = Alignment.Center, modifier = Modifier.fillMaxWidth()) {

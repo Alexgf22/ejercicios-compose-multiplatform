@@ -16,6 +16,19 @@ import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Problemas conocidos:
+
+    La navegación con la tecla de tabulación no funciona en un
+    TextField de varias líneas
+
+    Cuando el usuario presiona la tecla 'Tab', el enfoque no cambia
+    al siguiente componente enfocable. En su lugar, se agrega el carácter
+    de tabulación.
+
+Una posible solución
+Esta solución alternativa se menciona en Problemas/109 . Escribe un Modifier.moveFocusOnTab personalizado:
+ */
 fun main() = singleWindowApplication {
     Column {
         repeat(5) {

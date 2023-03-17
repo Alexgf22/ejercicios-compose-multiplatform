@@ -1,6 +1,7 @@
+/*
 package navigation
 
-/*
+
 import androidx.compose.runtime.Composable
 import com.arkivanov.decompose.ComponentContext
 import com.arkivanov.decompose.extensions.compose.jetbrains.Children
@@ -8,6 +9,12 @@ import com.arkivanov.decompose.pop
 import com.arkivanov.decompose.push
 import com.arkivanov.decompose.router
 import java.lang.module.Configuration
+
+*/
+/*
+    Rootear con navegación (suponiendo que solo se use Compose UI):
+ *//*
+
 
 typealias Content = @Composable () -> Unit
 
@@ -51,4 +58,5 @@ fun RootUi(root: Root) {
     Children(root.routerState) { child ->
         child.instance()
     }
-}*/
+}
+*/

@@ -17,6 +17,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 
+/*
+    Next/Previous Navegación por pestañas predeterminada:
+
+    Por defecto, 'Next/Previous' la navegación por pestañas mueve el foco en
+    orden de composición (en orden de aparición), para ver cómo funciona esto,
+    podemos usar algunos de los componentes que ya son enfocables por defecto:
+    , , , 'TextField' componentes 'OutlinedTextField' con 'BasicTextField'
+    ( 'Modifier.clickable', 'Button', 'IconButton') 'MenuItem'.
+ */
 fun main() = application {
     Window(
         state = WindowState(size = DpSize(350.dp, 500.dp)),

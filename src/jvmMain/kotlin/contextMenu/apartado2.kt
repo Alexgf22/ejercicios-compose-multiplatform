@@ -14,6 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Menú contextual definido por el usuario:
+
+    Para habilitar elementos adicionales del menú contextual para los componentes
+    TextField y Text, se utilizan los elementos ContextMenuDataProvider y ContextMenuItem:
+ */
 fun main() = singleWindowApplication(title = "Context menu") {
     val text = remember { mutableStateOf("Hello!") }
     Column {

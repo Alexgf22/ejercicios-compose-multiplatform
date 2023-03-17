@@ -9,6 +9,13 @@ import androidx.compose.ui.window.MenuBar
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+/*
+    Abrir y cerrar varias ventanas:
+
+    Si una aplicación tiene varias ventanas, entonces es mejor poner
+    su estado en una clase separada y abrir/cerrar la ventana en respuesta
+    a los cambios 'mutableStateListOf'
+ */
 fun main() = application {
     val applicationState = remember { MyApplicationState() }
 

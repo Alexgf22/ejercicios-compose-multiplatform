@@ -15,6 +15,9 @@ import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.onPointerEvent
 import androidx.compose.ui.window.singleWindowApplication
 
+/* interoperabilidad oscilante
+    Compose for Desktop usa Swing debajo y permite acceder a eventos AWT sin procesar
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication {
     var text by remember { mutableStateOf("") }

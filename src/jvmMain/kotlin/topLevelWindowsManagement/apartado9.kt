@@ -5,6 +5,12 @@ import java.awt.Dimension
 import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
+/*
+    interoperabilidad oscilante:
+
+    Debido a que Compose for Desktop usa Swing bajo el capó, es posible
+    crear una ventana usando Swing directamente:
+ */
 fun main() = SwingUtilities.invokeLater {
     ComposeWindow().apply {
         size = Dimension(300, 300)

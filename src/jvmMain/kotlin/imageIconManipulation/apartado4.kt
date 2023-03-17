@@ -8,6 +8,7 @@ import androidx.compose.ui.window.Tray
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+// Configuración del icono de la bandeja de aplicaciones
 fun main() = application {
     val icon = painterResource("sample.png")
 

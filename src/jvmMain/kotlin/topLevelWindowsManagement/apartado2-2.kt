@@ -10,6 +10,15 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+/*
+    Si la ventana requiere alguna lógica personalizada al cerrar
+    (por ejemplo, para mostrar un cuadro de diálogo), puede anular la acción
+    de cerrar usando onCloseRequest.
+
+    En lugar del enfoque imperativo para cerrar la ventana ( window.close()),
+    usamos un enfoque declarativo: cerrar la ventana en respuesta a un cambio de
+    estado ( isOpen = false).
+ */
 fun main() = application {
     var isOpen by remember { mutableStateOf(true) }
     var isAskingToClose by remember { mutableStateOf(false) }

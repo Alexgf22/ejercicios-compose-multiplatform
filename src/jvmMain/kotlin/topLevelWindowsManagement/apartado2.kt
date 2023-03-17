@@ -10,6 +10,14 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import kotlinx.coroutines.delay
 
+/*
+    Abrir y cerrar ventanas (condicionalmente):
+
+    También puede cerrar/abrir ventanas usando un 'if' declaración simple.
+
+    Cuando Window sale de la composición ( isPerformingTask se vuelve false),
+    la ventana nativa se cierra automáticamente.
+ */
 fun main() = application {
     var isPerformingTask by remember { mutableStateOf(true) }
 

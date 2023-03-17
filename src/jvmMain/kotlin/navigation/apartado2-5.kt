@@ -1,6 +1,7 @@
+/*
 package navigation
 
-/*
+
 import androidx.compose.desktop.DesktopTheme
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
@@ -9,6 +10,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.window.singleWindowApplication
 import com.arkivanov.decompose.extensions.compose.jetbrains.rememberRootComponent
+
+
+*/
+/*
+    Inicialización de la aplicación y la raíz:
+ *//*
 
 fun main() = singleWindowApplication(
     title = "Navigation tutorial"
@@ -30,4 +37,5 @@ private fun root(): Root =
             componentContext = componentContext,
             database = DatabaseImpl() // Supply dependencies
         )
-    }*/
+    }
+*/

@@ -20,6 +20,17 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberNotification
 import androidx.compose.ui.window.rememberTrayState
 
+/*
+    Bandeja:
+
+    Puede agregar un icono de aplicación a la bandeja del sistema.
+    También puede enviar notificaciones al usuario mediante la bandeja
+    del sistema. Hay 3 tipos de notificaciones:
+
+    notificar - notificación simple
+    advertir - notificación de advertencia
+    error - notificación de error
+ */
 fun main() = application {
     var count by remember { mutableStateOf(0) }
     var isOpen by remember { mutableStateOf(true) }

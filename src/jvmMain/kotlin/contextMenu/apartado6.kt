@@ -30,6 +30,14 @@ import javax.swing.KeyStroke.getKeyStroke
 import javax.swing.SwingUtilities
 import org.jetbrains.skiko.hostOs
 
+
+/*
+    interoperabilidad oscilante:
+
+    Si está integrando Compose en una aplicación existente, es posible que desee que el
+    menú contextual de texto tenga el mismo aspecto que en otras partes de la aplicación.
+    Para hacer esto, hay JPopupTextMenu:
+ */
 fun main() = SwingUtilities.invokeLater {
     val panel = ComposePanel()
     panel.setContent {

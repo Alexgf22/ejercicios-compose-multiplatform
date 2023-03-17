@@ -20,6 +20,12 @@ import androidx.compose.ui.window.MenuBar
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+/*
+    Barra de menús:
+
+    MenuBar se usa para crear y personalizar la barra de menú para una
+    ventana en particular.
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = application {
     var action by remember { mutableStateOf("Last action: None") }

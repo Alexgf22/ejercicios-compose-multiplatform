@@ -28,6 +28,13 @@ import javax.swing.JFrame
 import javax.swing.SwingUtilities
 import javax.swing.WindowConstants
 
+/*
+    Uso de ComposePanel:
+
+    ComposePanel le permite crear una interfaz de usuario utilizando Compose Multiplatform
+    en una interfaz de usuario basada en Swing. Para lograr esto, debe crear una instancia de
+    ComposePanel, agregarla a su diseño Swing y describir la composición dentro setContent.
+ */
 val northClicks = mutableStateOf(0)
 val westClicks = mutableStateOf(0)
 val eastClicks = mutableStateOf(0)

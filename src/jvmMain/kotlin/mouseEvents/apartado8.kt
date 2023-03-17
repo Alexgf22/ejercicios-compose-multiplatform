@@ -25,6 +25,18 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Nuevo modificador onDrag experimental (solo para la plataforma Desktop-JVM):
+
+    'Modifier.onDrag' permite la configuración del puntero que debe activar el arrastre
+    Muchos 'onDrag' modificadores se pueden encadenar juntos.
+
+    El siguiente ejemplo también muestra cómo acceder al estado de los modificadores del
+    teclado (a través de LocalWindowInfo.current.keyboardModifier) para los casos en que
+    los modificadores del teclado pueden alterar el comportamiento del arrastre (por ejemplo:
+    mover un elemento si realizamos un simple arrastre; o copiar/pegar un elemento si se
+    arrastra con Ctrl presionado)
+ */
 @OptIn(ExperimentalFoundationApi::class)
 fun main() = singleWindowApplication {
     val windowInfo = LocalWindowInfo.current

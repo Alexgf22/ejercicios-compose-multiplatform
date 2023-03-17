@@ -11,6 +11,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+
+/*
+    Menú contextual para un área arbitraria:
+
+    Existe la posibilidad de crear un menú contextual para un área de ventana de aplicación
+    arbitraria. Esto se implementa mediante la API ContextMenuArea que es similar a
+    ContextMenuDataProvider.
+
+    Al hacer clic con el botón derecho en el cuadrado azul, se mostrará un menú contextual
+    con dos elementos
+ */
 fun main() = singleWindowApplication(title = "Context menu") {
     ContextMenuArea(items = {
         listOf(

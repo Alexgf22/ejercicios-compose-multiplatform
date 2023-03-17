@@ -25,6 +25,13 @@ import java.nio.charset.Charset
 import javax.swing.JFrame
 import javax.swing.SwingUtilities
 
+
+/*
+    Menú contextual de texto personalizado:
+
+    Puede anular el menú de texto para todos los textos y campos de texto
+    en su aplicación, anulando TextContextMenu:
+ */
 fun main() = SwingUtilities.invokeLater {
     val panel = ComposePanel()
     panel.setContent {

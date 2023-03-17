@@ -15,6 +15,12 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import kotlinx.coroutines.delay
 
+/*
+    Ocultar la ventana en la bandeja:
+
+    Si no necesita cerrar la ventana y solo necesita ocultarla
+    (por ejemplo, en la bandeja), puede cambiar el estado 'windowState.isVisible':
+ */
 fun main() = application {
     var isVisible by remember { mutableStateOf(true) }
 

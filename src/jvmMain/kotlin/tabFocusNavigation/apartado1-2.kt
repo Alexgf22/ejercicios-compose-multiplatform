@@ -33,6 +33,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.DpSize
 
+/*
+    Para hacer que un componente no enfocable sea enfocable,
+    debe aplicar Modifier.focusable() un modificador al componente.
+ */
 fun main() = application {
     Window(
         state = WindowState(size = DpSize(350.dp, 450.dp)),

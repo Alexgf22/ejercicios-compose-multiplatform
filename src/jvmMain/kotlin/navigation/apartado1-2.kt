@@ -9,6 +9,11 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.runtime.Composable
 
+/*
+    El ItemDetailsScreen @Composable componente muestra la devolución
+    de llamada seleccionada previamente 'Item' y llama 'onBackClick' cuando
+    se hace clic en el botón Atrás en TopAppBar:
+ */
 @Composable
 fun ItemDetailsScreen(item: Item, onBackClick: () -> Unit) {
     Column {

@@ -1,6 +1,6 @@
 package scrollingAndScrollbars
 
-/*
+
 import androidx.compose.foundation.VerticalScrollbar
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -23,6 +23,11 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
+/*
+    Componentes perezosos desplazables con barra de desplazamiento:
+    Puede usar barras de desplazamiento con componentes perezosos desplazables,
+    por ejemplo, 'LazyColumn'.
+ */
 fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
@@ -45,7 +50,7 @@ fun LazyScrollable() {
 
         LazyColumn(Modifier.fillMaxSize().padding(end = 12.dp), state) {
             items(1000) { x ->
-                TextBox("Item #$x")
+                TextBox2("Item #$x")
                 Spacer(modifier = Modifier.height(5.dp))
             }
         }
@@ -59,7 +64,7 @@ fun LazyScrollable() {
 }
 
 @Composable
-fun TextBox(text: String = "Item") {
+fun TextBox2(text: String = "Item") {
     Box(
         modifier = Modifier.height(32.dp)
             .fillMaxWidth()
@@ -69,4 +74,4 @@ fun TextBox(text: String = "Item") {
     ) {
         Text(text = text)
     }
-}*/
+}

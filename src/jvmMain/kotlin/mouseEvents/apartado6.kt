@@ -10,6 +10,9 @@ import androidx.compose.ui.input.pointer.PointerEventType
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Escuchar eventos sin procesar en commonMain a través de Modifier.pointerInput
+ */
 fun main() = singleWindowApplication {
     val list = remember { mutableStateListOf<String>() }
 

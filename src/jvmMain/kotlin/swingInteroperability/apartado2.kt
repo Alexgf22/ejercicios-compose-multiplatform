@@ -24,6 +24,17 @@ import javax.swing.BoxLayout
 import javax.swing.JButton
 import javax.swing.JPanel
 
+
+/*
+    Agregar un componente Swing a la composición Compose Multiplatform usando
+    SwingPanel:
+
+    SwingPanel le permite crear una interfaz de usuario utilizando Swing en una
+    interfaz de usuario basada en Compose. Para lograr esto necesitas crear Swing
+    'JComponent' en el 'factory' parámetro de 'SwingPanel'.
+
+
+ */
 fun main() = singleWindowApplication {
     val counter = remember { mutableStateOf(0) }
 

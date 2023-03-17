@@ -14,6 +14,15 @@ import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
+/*
+    Cambiar el estado (maximizado, minimizado, pantalla completa, tamaño, posición)
+    de la ventana.
+
+    Algunos estados de la ventana nativa se mueven a una clase de API separada,
+    WindowState. Puedes cambiar sus propiedades en callbacks u observarlo en
+    Composable's. Cuando se cambia algún estado (tamaño o posición de la ventana),
+    la función Composable se recompondrá automáticamente.
+ */
 fun main() = application {
     val state = rememberWindowState(placement = WindowPlacement.Maximized)
 

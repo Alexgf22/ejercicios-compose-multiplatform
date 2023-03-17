@@ -9,6 +9,16 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+/*
+    Abrir y cerrar ventanas:
+
+    La función principal para crear ventanas es Window. Esta función debe usarse
+    en un alcance componible. La forma más fácil de crear un alcance Composable es
+    usar la función 'application'
+
+    Window es una función componible, lo que significa que puedes cambiar sus propiedades
+    de forma declarativa
+ */
 fun main() = application {
     var fileName by remember { mutableStateOf("Untitled") }
 

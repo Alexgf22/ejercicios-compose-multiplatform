@@ -19,6 +19,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    Ratón introducir oyentes:
+    Compose for Desktop también admite controladores de
+    entrada y salida de puntero, como este:
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication {
     Column(

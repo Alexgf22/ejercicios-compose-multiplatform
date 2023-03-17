@@ -4,6 +4,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 
+/*
+    ItemDetails niño con IU:
+ */
 class ItemDetails(
     itemId: Long, // An item id to be loaded and displayed
     database: Database, // Accept the Database as dependency

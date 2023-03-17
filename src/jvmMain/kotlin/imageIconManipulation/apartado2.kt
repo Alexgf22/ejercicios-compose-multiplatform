@@ -18,6 +18,8 @@ import androidx.compose.ui.res.useResource
 import androidx.compose.ui.window.singleWindowApplication
 import org.xml.sax.InputSource
 
+
+// Dibujar imágenes usando Canvas
 fun main() = singleWindowApplication {
     val density = LocalDensity.current // to calculate the intrinsic size of vector images (SVG, XML)
 

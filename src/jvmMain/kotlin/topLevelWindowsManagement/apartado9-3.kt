@@ -10,6 +10,10 @@ import androidx.compose.ui.window.application
 import java.awt.FileDialog
 import java.awt.Frame
 
+/*
+    Si necesita un cuadro de diálogo que se implemente en Swing,
+    puede envolverlo en una función Composable:
+ */
 fun main() = application {
     var isOpen by remember { mutableStateOf(true) }
 

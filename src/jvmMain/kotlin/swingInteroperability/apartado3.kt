@@ -26,6 +26,15 @@ import javax.swing.JLabel
 
 val swingLabel = JLabel()
 
+
+/*
+    Actualización del componente Swing cuando cambia el estado de composición:
+
+    El siguiente ejemplo muestra cómo actualizar un componente Swing en un
+    'SwingPanel' momento en que cambia el estado componible. Para hacer esto,
+    debe proporcionar una update: '(T) -> Unit' devolución de llamada que se llama
+    cuando cambia el estado componible o después de que se infle el diseño.
+ */
 fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,

@@ -20,6 +20,13 @@ import java.awt.Insets
 import javax.swing.*
 import javax.swing.border.EmptyBorder
 
+/*
+    Diseño con SwingPanel y ComposePanel:
+
+    El siguiente ejemplo muestra cómo se pueden combinar Compose for Desktop
+    y Swing en ambas direcciones, es decir, agregar un SwingPanel a un
+    ComposePanel que a su vez se agrega a otro SwingPanel.
+ */
 val Gray = java.awt.Color(64, 64, 64)
 val DarkGray = java.awt.Color(32, 32, 32)
 val LightGray = java.awt.Color(210, 210, 210)

@@ -25,7 +25,15 @@ import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.singleWindowApplication
 
 private var cleared by mutableStateOf(false)
+/*
+    Eventos de ámbito de ventana:
 
+    Window, singleWindowApplication y Dialog las funciones tienen propiedades
+    a onPreviewKeyEvent y a onKeyEvent. Es posible usarlos para definir
+    controladores de eventos de teclado que siempre están activos en la
+    ventana actual. Posiblemente quiera usar onPreviewKeyEvent aquí para
+    interceptar eventos. Aquí hay un ejemplo
+ */
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() = singleWindowApplication(
     onKeyEvent = {

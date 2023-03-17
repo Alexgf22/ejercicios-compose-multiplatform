@@ -4,6 +4,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 
+
+/*
+    Un ejemplo muy básico:
+
+    ItemList niño con IU
+ */
 class ItemList(
     database: Database, // Accept the Database as dependency
     val onItemSelected: (itemId: Long) -> Unit // Called on item click

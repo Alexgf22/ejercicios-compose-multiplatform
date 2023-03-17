@@ -14,6 +14,15 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
+/*
+    Tamaño de ventana adaptable:
+
+    A veces queremos mostrar algún contenido como un conjunto sin saber de antemano qué se
+    mostrará exactamente, lo que significa que no sabemos las dimensiones de ventana óptimas
+    para ello. Al establecer una o ambas dimensiones de WindowSize de su ventana en Dp.Unspecified,
+    Compose for Desktop ajustará automáticamente el tamaño inicial de su ventana en esa dimensión
+    para acomodar su contenido:
+ */
 fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,

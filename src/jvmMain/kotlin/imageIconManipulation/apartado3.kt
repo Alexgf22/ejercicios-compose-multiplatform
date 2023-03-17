@@ -8,6 +8,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 
+
+// Configuración del icono de la ventana de la aplicación
 fun main() = application {
     val icon = painterResource("sample.png")
     Window(

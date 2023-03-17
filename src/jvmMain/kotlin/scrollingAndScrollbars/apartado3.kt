@@ -22,6 +22,24 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 
+
+/*
+    Información sobre herramientas:
+
+    Puede agregar información sobre herramientas a cualquier componente usando 'TooltipArea'.
+    'TooltipArea' es similar a un Box, pero con la capacidad de mostrar información sobre
+    herramientas.
+
+    Los principales argumentos de la función 'TooltipArea':
+
+    - información sobre herramientas: contenido componible que representa información sobre
+      herramientas
+    - tooltipPlacement: describe cómo colocar información sobre herramientas.
+      Puede especificar un ancla (el cursor del mouse o el componente), un desplazamiento y
+      una alineación
+    - retraso: retraso de tiempo en milisegundos después del cual se mostrará la información
+      sobre herramientas (el valor predeterminado es 500 ms)
+ */
 @OptIn(ExperimentalComposeUiApi::class, ExperimentalFoundationApi::class)
 fun main() = application {
     Window(

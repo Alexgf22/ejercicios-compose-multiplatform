@@ -13,6 +13,17 @@ import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberDialogState
 
+/*
+    Diálogos:
+
+    Hay dos tipos de ventana: modal y regular. A continuación se muestran
+    las funciones para crear cada uno:
+
+    Ventana: tipo de ventana normal.
+    Diálogo: tipo de ventana modal. Este tipo bloquea su ventana principal
+    hasta que el usuario termina de trabajar con ella y cierra la ventana modal.
+    Puede ver un ejemplo de ambos tipos de ventana a continuación.
+ */
 fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,

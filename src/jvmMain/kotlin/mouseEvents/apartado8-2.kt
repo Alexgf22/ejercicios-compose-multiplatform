@@ -22,6 +22,10 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.singleWindowApplication
 
+/*
+    También hay una forma sin modificador de manejar los arrastres usando
+    'suspend fun PointerInputScope.detectDragGestures' :
+ */
 @OptIn(ExperimentalFoundationApi::class)
 fun main() = singleWindowApplication {
     var topBoxOffset by remember { mutableStateOf(Offset(0f, 0f)) }
